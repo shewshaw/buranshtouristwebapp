@@ -1,4 +1,4 @@
-import { Mountain, Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { Mountain, Phone, Mail, MapPin, Facebook, Instagram, Code2, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Footer() {
@@ -72,6 +72,22 @@ export default function Footer() {
           <p className="text-xs font-serif text-muted-foreground mt-1" data-testid="text-blessing">
             ॐ नमः शिवाय - Om Namah Shivaya
           </p>
+          <div className="mt-4 flex items-center justify-center gap-2 text-sm">
+            <span className="inline-flex items-center gap-2 text-muted-foreground">
+              <Code2 className="h-4 w-4 text-primary" aria-hidden="true" />
+              <span>Developed by</span>
+              <a
+                href="https://shewshaw.tech/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-1 font-medium text-foreground hover:text-primary transition-colors"
+                aria-label="Visit Shew Shaw website"
+              >
+                Shew Shaw
+                <ExternalLink className="h-3.5 w-3.5 opacity-70 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </footer>
