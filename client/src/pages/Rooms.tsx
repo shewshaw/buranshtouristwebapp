@@ -1,15 +1,27 @@
 import RoomCard from "@/components/RoomCard";
 import { Card, CardContent } from "@/components/ui/card";
 import { Wifi, Coffee, Bed, Utensils, Shirt, Shield } from "lucide-react";
-import roomImage from "@assets/generated_images/Cozy_lodge_room_interior_fa402585.png";
 import SEOHead from "@/components/SEOHead";
+
+//standard room images
+import standardBedroom1Img from "@assets/images/standard-bedroom-1.png";
+import standardBathroom1Img from "@assets/images/standard-bathroom-1.png";
+
+//standard room images
+import deluxeBedroom1Img from "@assets/images/deluxe-bedroom-1.png";
+import deluxeBathroom1Img from "@assets/images/deluxe-bathroom-1.png";
+import deluxeBathroom2Img from "@assets/images/deluxe-bathroom-2.png";
+
+//standard room images
+import superDeluxeBedroom1Img from "@assets/images/super-deluxe-bedroom-1.png";
+import superDeluxeBathroom1Img from "@assets/images/super-deluxe-bathroom-1.png";
 
 export default function Rooms() {
   const rooms = [
     {
       title: "Standard Room",
       titleHindi: "स्टैंडर्ड कमरा",
-      image: roomImage,
+      images: [standardBedroom1Img, standardBathroom1Img],
       capacity: 2,
       amenities: ["Meals", "Mountain View"],
       price: "₹1,800"
@@ -17,18 +29,18 @@ export default function Rooms() {
     {
       title: "Deluxe Room",
       titleHindi: "डीलक्स कमरा",
-      image: roomImage,
+      images: [deluxeBedroom1Img, deluxeBathroom1Img, deluxeBathroom2Img],
       capacity: 3,
       amenities: ["WiFi", "Meals", "Mountain View"],
       price: "₹2,500"
     },
     {
-      title: "Dormitory",
-      titleHindi: "सामूहिक कमरा",
-      image: roomImage,
-      capacity: 6,
-      amenities: ["Meals"],
-      price: "₹800"
+      title: "Super Deluxe Room",
+      titleHindi: "सुपर डीलक्स कमरा",
+      images: [superDeluxeBedroom1Img, superDeluxeBathroom1Img],
+      capacity: 4,
+      amenities: ["WiFi", "Meals", "Mountain View"],
+      price: "₹3,500"
     }
   ];
 
