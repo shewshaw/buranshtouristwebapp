@@ -1,11 +1,13 @@
 import GalleryGrid from "@/components/GalleryGrid";
+import SEOHead from "@/components/SEOHead";
+
 import mountainImage from "@assets/generated_images/Himalayan_mountain_peaks_panorama_295170a4.png";
 import lodgeImage from "@assets/generated_images/Himalayan_lodge_with_flowers_bfb3cb8b.png";
 import templeImage from "@assets/generated_images/Himalayan_temple_with_mountains_37afb6a4.png";
 import roomImage from "@assets/generated_images/Cozy_lodge_room_interior_fa402585.png";
 import trekImage from "@assets/generated_images/Forest_trekking_trail_scene_c41a789b.png";
 import flowersImage from "@assets/generated_images/Buransh_flowers_close-up_fa5ea8dd.png";
-import SEOHead from "@/components/SEOHead";
+import buranshLodge1Img from "@assets/images/buransh-lodge-1.png";
 
 export default function Gallery() {
   const images = [
@@ -16,7 +18,7 @@ export default function Gallery() {
       captionHindi: "भव्य चौखम्बा पर्वत श्रृंखला"
     },
     {
-      src: lodgeImage,
+      src: buranshLodge1Img,
       alt: "Buransh Lodge",
       caption: "Buransh Tourist Lodge with Himalayan Backdrop",
       captionHindi: "हिमालय की पृष्ठभूमि के साथ बुरांश टूरिस्ट लॉज"
